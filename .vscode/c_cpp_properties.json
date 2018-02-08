@@ -1,0 +1,120 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/x86_64-pc-linux-gnu",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/backward",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include",
+                "/usr/local/include",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include-fixed",
+                "/usr/include",
+                "${workspaceRoot}",
+                "/usr/include/gtkmm-3.0",
+                "/usr/lib/gtkmm-3.0/include",
+                "/usr/include/atkmm-1.6",
+                "/usr/include/gtk-3.0/unix-print",
+                "/usr/include/gdkmm-3.0",
+                "/usr/lib/gdkmm-3.0/include",
+                "/usr/include/giomm-2.4",
+                "/usr/lib/giomm-2.4/include",
+                "/usr/include/pangomm-1.4",
+                "/usr/lib/pangomm-1.4/include",
+                "/usr/include/glibmm-2.4",
+                "/usr/lib/glibmm-2.4/include",
+                "/usr/include/gtk-3.0",
+                "/usr/include/at-spi2-atk/2.0",
+                "/usr/include/at-spi-2.0",
+                "/usr/include/dbus-1.0",
+                "/usr/lib/dbus-1.0/include",
+                "/usr/include/gtk-3.0",
+                "/usr/include/gio-unix-2.0/",
+                "/usr/include/cairo",
+                "/usr/include/pango-1.0",
+                "/usr/include/atk-1.0",
+                "/usr/include/cairo",
+                "/usr/include/cairomm-1.0",
+                "/usr/lib/cairomm-1.0/include",
+                "/usr/include/cairo",
+                "/usr/include/pixman-1",
+                "/usr/include/freetype2",
+                "/usr/include/libpng16",
+                "/usr/include/harfbuzz",
+                "/usr/include/glib-2.0",
+                "/usr/lib/glib-2.0/include",
+                "/usr/include/freetype2",
+                "/usr/include/harfbuzz",
+                "/usr/include/libpng16",
+                "/usr/include/sigc++-2.0",
+                "/usr/lib/sigc++-2.0/include",
+                "/usr/include/gdk-pixbuf-2.0",
+                "/usr/include/glib-2.0",
+                "/usr/lib/glib-2.0/include",
+                "${workspaceRoot}/src"
+            ],
+            "defines": [
+                "SS_CODE_EDITOR"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/x86_64-pc-linux-gnu",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/../../../../include/c++/7.2.1/backward",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include",
+                    "/usr/local/include",
+                    "/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include-fixed",
+                    "/usr/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 3
+}
