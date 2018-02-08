@@ -1,6 +1,10 @@
 #pragma once
-#include <stdint.h>
 
+
+#include <deque>
+template<typename T> using dynarr = std::deque<T>;
+
+#include <stdint.h>
 
 // A whole buncha int types
 typedef intmax_t  imax;
