@@ -1,15 +1,15 @@
 #pragma once
 
 #include <gtkmm/window.h>
-#include <types.hpp>
+#include <callista/types.hpp>
 
 class DesignerWindow : Gtk::Window {
 	
 	
-	DesignerWindow(dynarr open_files);
+	//DesignerWindow(dynarr< open_files);
 }
 
-#if defined(SS_UI_IMPL) || defined(SS_CODE_EDITOR)
+#if defined(CS_UI_IMPL) || defined(CS_CODE_EDITOR)
 
 ;
 

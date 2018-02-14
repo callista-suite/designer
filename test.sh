@@ -1,3 +1,4 @@
 #!/bin/sh
+./build.sh $@
 cd bin
-./shapesplash
+./callista-designer

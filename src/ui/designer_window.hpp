@@ -1,6 +1,6 @@
-#include "../build_info.hpp"
-#include <types.hpp>
+#include <callista/build_info.hpp>
+#include <callista/types.hpp>
 
-#if SS_OS_GTK
+#if CS_OS_GTK
 	#include "gtk/designer_window.hpp"
 #endif

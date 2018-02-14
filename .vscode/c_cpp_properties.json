@@ -74,10 +74,11 @@
                 "/usr/include/gdk-pixbuf-2.0",
                 "/usr/include/glib-2.0",
                 "/usr/lib/glib-2.0/include",
-                "${workspaceRoot}/src"
+                "${workspaceRoot}/src",
+                "${workspaceRoot}/subprojects/libcallistashared/include"
             ],
             "defines": [
-                "SS_CODE_EDITOR"
+                "CS_CODE_EDITOR"
             ],
             "intelliSenseMode": "clang-x64",
             "browse": {

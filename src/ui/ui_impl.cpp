@@ -1,3 +1,3 @@
 
-#define SS_UI_IMPL
-#include "window.hpp"
+#define CS_UI_IMPL
+#include "designer_window.hpp"
