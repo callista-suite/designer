@@ -1,7 +1,6 @@
 
 #include <stdio.h>
 #include <callista/build_info.hpp>
-#include <callista/test.hpp>
 
 #if CS_OS_WIN32
 
@@ -19,9 +18,6 @@
 		int main(int argc, char** argv) {
 			
 			sharedApp = Gtk::Application::create(argc, argv, "com.zacpierson.shapesplash");
-
-			tester();
-			tester();
 
 			return 0;
 		}
