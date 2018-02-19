@@ -1,28 +1,23 @@
 
+// Library includes
 #include <stdio.h>
-#include <callista/build_info.hpp>
 
-#if CS_OS_WIN32
+// Callista includes
+#include <callista/app.hpp>
 
-#error "Not implemented."
+// App includes
+#include "ui/designer_ui.hpp"
 
-// Apple's stuff has to be written in Swift or ObjC.
-// I'm not sure how to approach this yet.
-#elif !CS_OS_APPLE
-	#if CS_OS_GTK
 
-		#include <gtkmm/application.h>
+CallistaApp setup_app_struct() {
 
-		Glib::RefPtr<Gtk::Application> sharedApp;
+	CallistaApp app;
 
-		int main(int argc, char** argv) {
-			
-			sharedApp = Gtk::Application::create(argc, argv, "com.zacpierson.shapesplash");
+	app.setup_document_window_proc = setup_document_window;
+	app.package_id = "com.callistasuite.designer";
+	app.friendly_name = "Callista Designer";
 
-			return 0;
-		}
+	return app;
+}
 
-	#else
-		#error "Only GTK building is supported on *nix."
-	#endif
-#endif
+CALLISTA_MAIN(setup_app_struct);

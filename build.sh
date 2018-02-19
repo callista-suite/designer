@@ -1,7 +1,11 @@
 #!/bin/sh
 rm -rf bin                                                                                 2>/dev/null
 mkdir bin
-mkdir build                                                                                2>/dev/null
+BUILD_DIR=build
+if [[ -d "$DEV_RAMDISK" ]]; then
+	BUILD_DIR="$DEV_RAMDISK/callista/designer/build"
+fi
+mkdir -p "$BUILD_DIR"
 LIBNAME="libcallistashared"
 LIB_SUBPROJ="subprojects/$LIBNAME"
 if [ -d "$LIB_SUBPROJ" ]; then
@@ -19,11 +23,21 @@ else
 	git clone     https://github.com/callista-suite/$LIBNAME
 	cd ..
 fi
-meson build $@
-cd build
+if [[ -d "$DEV_RAMDISK" ]]; then
+	# I'm so, so sorry. This is probably horrible
+	# practice, but I'm impatient.
+	echo "Mounting ramdisk include dir to /usr/include."
+	sudo mount --bind $DEV_RAMDISK/usr_include /usr/include
+fi
+meson $BUILD_DIR $@
+pushd $BUILD_DIR
 ninja
-cd ..
-cp build/callista-designer* bin/
-cp build/*.dll bin/                                                                        2>/dev/null
-cp build/*.pdb bin/                                                                        2>/dev/null
+popd
+if [[ -d "$DEV_RAMDISK" ]]; then
+	echo "Unmounting ramdisk include dir."
+	sudo umount /usr/include
+fi
+cp $BUILD_DIR/callista-designer* ./bin/
+cp $BUILD_DIR/*.dll bin/                                                                   2>/dev/null
+cp $BUILD_DIR/*.pdb bin/                                                                   2>/dev/null
 cp res/* bin/                                                                              2>/dev/null
