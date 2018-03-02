@@ -1,6 +1,6 @@
-#include "designer_ui.hpp"
-#include <callista/ui/document_window.hpp>
-#include <callista/ui/button.hpp>
+#include "designer_ui.h"
+#include <callista/ui/document_window.h>
+#include <callista/ui/button.h>
 
 
 Button *b;

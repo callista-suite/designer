@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 // Callista includes
-#include <callista/app.hpp>
+#include <callista/app.h>
 
 // App includes
-#include "ui/designer_ui.hpp"
+#include "ui/designer_ui.h"
 
 
 CallistaApp setup_app_struct() {
